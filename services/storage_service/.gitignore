@@ -1,0 +1,13 @@
+cat > .gitignore <<'EOF'
+.env
+*.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+results/
+data/output/
+refresh_token.txt
+*.zip
+EOF

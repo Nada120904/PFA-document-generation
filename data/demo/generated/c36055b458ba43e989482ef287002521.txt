@@ -1,0 +1,10 @@
+Indexed Document Notes
+
+project_brief.txt: PFA 2026 Document Intelligence Pilot
+project_brief.txt: The pilot team is based in Casablanca, Morocco.
+project_brief.txt: The assistant supports documents in English, French, and Arabic.
+project_brief.txt: The project turns uploaded documents into searchable knowledge.
+pilot_metrics.csv: Metric,Value,Context
+pilot_metrics.csv: Pilot location,"Casablanca, Morocco",Document intelligence pilot
+pilot_metrics.csv: Supported languages,"English; French; Arabic",Indexed content
+pilot_metrics.csv: Target turnaround,"2 business days",Pilot review workflow

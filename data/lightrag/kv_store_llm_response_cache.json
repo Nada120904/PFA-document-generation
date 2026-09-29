@@ -1,0 +1,102 @@
+{
+  "hybrid:keywords:5bccd92966aefc0009828e08f1f0715a": {
+    "return": "{\"high_level_keywords\": [\"machine learning\", \"artificial intelligence\", \"computer science concepts\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "what is machine learning?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 5,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1786076471,
+    "update_time": 1786076471,
+    "_id": "hybrid:keywords:5bccd92966aefc0009828e08f1f0715a"
+  },
+  "hybrid:keywords:b48242d13175b186434b90bff08fa0fb": {
+    "return": "{\"high_level_keywords\": [\"artificial intelligence\", \"machine learning\", \"definition\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What is machine learning?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 5,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1786076477,
+    "update_time": 1786076477,
+    "_id": "hybrid:keywords:b48242d13175b186434b90bff08fa0fb"
+  },
+  "hybrid:keywords:0f8f03a037754a7b3e5a5aa65a0d4b17": {
+    "return": "{\"high_level_keywords\": [\"machine learning\", \"artificial intelligence\", \"computer science concepts\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "what is machine learning",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 5,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1786077849,
+    "update_time": 1786077849,
+    "_id": "hybrid:keywords:0f8f03a037754a7b3e5a5aa65a0d4b17"
+  },
+  "hybrid:keywords:779e5366f385f7ea06f04af75b3a29ce": {
+    "return": "{\"high_level_keywords\": [\"cloud computing\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "cloud computing",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 5,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1788169302,
+    "update_time": 1788169302,
+    "_id": "hybrid:keywords:779e5366f385f7ea06f04af75b3a29ce"
+  },
+  "hybrid:keywords:fabb770604dbaface906dcec98d85ab2": {
+    "return": "{\"high_level_keywords\": [\"renewable energy\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "renewable energy",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 5,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1788169478,
+    "update_time": 1788169478,
+    "_id": "hybrid:keywords:fabb770604dbaface906dcec98d85ab2"
+  }
+}

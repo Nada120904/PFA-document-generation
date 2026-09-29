@@ -1,0 +1,12 @@
+services:
+  vlm-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: vlm-service
+    container_name: vlm-service
+    ports:
+      - "8003:8003"
+    env_file:
+      - .env
+    restart: unless-stopped

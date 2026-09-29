@@ -1,0 +1,39 @@
+1
+00:00:01,350 --> 00:00:05,324
+Explore four uploads and four redesigned files.
+
+2
+00:00:06,369 --> 00:00:11,303
+PDF, Word, CSV, and text enter the upload queue.
+
+3
+00:00:16,888 --> 00:00:21,438
+The answer shows Casablanca, Amal Benali, and M L.
+
+4
+00:00:21,682 --> 00:00:25,512
+The chatbot declines the lunar geology request.
+
+5
+00:00:26,289 --> 00:00:29,591
+Create and preview an M L PDF.
+
+6
+00:00:29,641 --> 00:00:35,319
+Open the M L brief to review its highlights, source index, and detailed evidence.
+
+7
+00:00:38,732 --> 00:00:43,426
+The Word report organizes thirty six evidence items by document.
+
+8
+00:00:48,032 --> 00:00:53,230
+The text export keeps the same sections in a readable plain text layout.
+
+9
+00:00:57,141 --> 00:01:02,819
+The C S V opens as a table with document, file type, and evidence columns.
+
+10
+00:01:03,895 --> 00:01:07,653
+All four redesigned files were opened and downloaded.

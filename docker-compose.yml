@@ -1,0 +1,49 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: rag-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: rag_system
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  upload-service:
+    build:
+      context: .
+      dockerfile: services/upload_service/Dockerfile
+    container_name: rag-upload-service
+    depends_on:
+      - postgres
+    env_file:
+      - services/upload_service/.env
+    environment:
+      POSTGRES_URL: postgresql+psycopg://postgres:postgres@postgres:5432/rag_system
+    volumes:
+      - ./services/upload_service/uploads:/app/services/upload_service/uploads
+    ports:
+      - "8011:8000"
+
+  docling-service:
+    build:
+      context: .
+      dockerfile: services/docling_service/Dockerfile
+    container_name: rag-docling-service
+    depends_on:
+      - postgres
+    env_file:
+      - services/docling_service/.env
+    environment:
+      POSTGRES_URL: postgresql+psycopg://postgres:postgres@postgres:5432/rag_system
+    volumes:
+      - ./services/upload_service/uploads:/app/services/upload_service/uploads
+    ports:
+      - "8005:8000"
+
+volumes:
+  postgres_data:

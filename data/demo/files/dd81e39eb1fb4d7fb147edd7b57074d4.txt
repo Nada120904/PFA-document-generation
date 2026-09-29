@@ -1,0 +1,11 @@
+PFA 2026 Document Intelligence Pilot
+
+The pilot team is based in Casablanca, Morocco. The assistant supports documents in English, French, and Arabic.
+
+The project turns uploaded documents into searchable knowledge. A user chooses a storage provider, adds a document and metadata, then starts a queue. The pipeline uploads the file, extracts its text, and indexes the result. A vision model can help with difficult scanned pages when ordinary extraction is not confident enough.
+
+Once a document is indexed, users can ask questions grounded in its content, filter retrieval using document metadata, revisit saved chat sessions, and inspect the document library. The operations dashboard shows service health, parsing results, indexing, and retrieval.
+
+This file contains harmless sample content for the local video demonstration.
+
+Demo run ID: 7f59744b

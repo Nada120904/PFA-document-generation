@@ -1,0 +1,77 @@
+Document Intelligence Evidence Report
+=====================================
+
+SOURCE FILES  4
+EVIDENCE ITEMS  36
+
+HIGHLIGHTS
+----------
+01. The pilot success criterion is zero unsupported claims in generated files.
+    Source: quality_criteria.pdf
+
+02. The pilot team is based in Casablanca, Morocco.
+    Source: project_brief.txt
+
+03. The quality reviewer is Salma Idrissi.
+    Source: review_guide.docx
+
+04. Metric: Pilot location; Value: Casablanca, Morocco; Context: Document intelligence pilot
+    Source: pilot_metrics.csv
+
+SOURCE INDEX
+------------
+01. quality_criteria.pdf  |  9 evidence items
+02. project_brief.txt  |  9 evidence items
+03. review_guide.docx  |  9 evidence items
+04. pilot_metrics.csv  |  9 evidence items
+
+EVIDENCE BY DOCUMENT
+--------------------
+
+01  QUALITY CRITERIA
+    quality_criteria.pdf
+    01. The pilot success criterion is zero unsupported claims in generated files.
+    02. Every exported excerpt must be traceable to an indexed upload.
+    03. Machine learning (ML) helps classify the pilot's uploaded documents.
+    04. The ML workflow extracts text and checks source passages before export.
+    05. ML classification organizes documents so reviewers can find relevant evidence.
+    06. ML output is reviewed against the extracted text from the original files.
+    07. ML-assisted retrieval uses indexed passages to answer document questions.
+    08. ML does not authorize a claim when the indexed files contain no matching fact.
+    09. The ML review checks the source name, passage wording, and requested subject.
+
+02  PROJECT BRIEF
+    project_brief.txt
+    01. The pilot team is based in Casablanca, Morocco.
+    02. The assistant supports documents in English, French, and Arabic.
+    03. The pilot accepts PDF, Word, CSV, and TXT uploads.
+    04. The project turns uploaded documents into searchable knowledge.
+    05. Users choose a storage provider, add a document and metadata, and start the processing queue.
+    06. The pipeline uploads each file, extracts its text, and indexes the result for retrieval.
+    07. A vision model can help with difficult scanned pages when ordinary extraction has low confidence.
+    08. After indexing, users can ask questions grounded in the uploaded content.
+    09. Users can filter retrieval with document metadata to narrow the evidence set.
+
+03  REVIEW GUIDE
+    review_guide.docx
+    01. The quality reviewer is Salma Idrissi.
+    02. The review owner is Amal Benali.
+    03. The reviewer checks source excerpts in the preview before downloading an export.
+    04. The reviewer compares every generated claim with the named uploaded file.
+    05. The reviewer confirms that a requested subject appears in the indexed files before approving an export.
+    06. A request without matching source material must return a no-data message and no file.
+    07. The review covers PDF, Word, CSV, and TXT exports.
+    08. The review checklist includes factual accuracy, readable structure, source names, and complete download links.
+    09. The owner records any unsupported or unclear statement for correction before sharing a file.
+
+04  PILOT METRICS
+    pilot_metrics.csv
+    01. Metric: Pilot location; Value: Casablanca, Morocco; Context: Document intelligence pilot
+    02. Metric: Review owner; Value: Amal Benali; Context: Pilot operations
+    03. Metric: Quality reviewer; Value: Salma Idrissi; Context: Content review
+    04. Metric: Supported languages; Value: English; French; Arabic; Context: Indexed content
+    05. Metric: Accepted upload formats; Value: PDF; Word; CSV; TXT; Context: Document intake
+    06. Metric: Target turnaround; Value: 2 business days; Context: Pilot review workflow
+    07. Metric: Quality target; Value: Zero unsupported claims; Context: Generated file review
+    08. Metric: Evidence requirement; Value: Every exported excerpt names its source; Context: Generated file review
+    09. Metric: Missing topic behavior; Value: No file is generated; Context: Unsupported subject request

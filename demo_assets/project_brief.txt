@@ -1,0 +1,15 @@
+PFA 2026 Document Intelligence Pilot
+
+The pilot team is based in Casablanca, Morocco.
+The assistant supports documents in English, French, and Arabic.
+The pilot accepts PDF, Word, CSV, and TXT uploads.
+The project turns uploaded documents into searchable knowledge.
+Users choose a storage provider, add a document and metadata, and start the processing queue.
+The pipeline uploads each file, extracts its text, and indexes the result for retrieval.
+A vision model can help with difficult scanned pages when ordinary extraction has low confidence.
+After indexing, users can ask questions grounded in the uploaded content.
+Users can filter retrieval with document metadata to narrow the evidence set.
+Saved chat sessions let users revisit earlier questions and answers.
+The document library shows file details and processing status.
+The operations dashboard shows service health, parsing results, indexing, and retrieval.
+The pilot measures success by accurate answers, source traceability, and a clear refusal when a requested subject is absent.

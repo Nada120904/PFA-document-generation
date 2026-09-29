@@ -1,0 +1,12 @@
+Metric,Value,Context
+Pilot location,"Casablanca, Morocco",Document intelligence pilot
+Review owner,Amal Benali,Pilot operations
+Quality reviewer,Salma Idrissi,Content review
+Supported languages,"English; French; Arabic",Indexed content
+Accepted upload formats,PDF; Word; CSV; TXT,Document intake
+Target turnaround,"2 business days",Pilot review workflow
+Quality target,Zero unsupported claims,Generated file review
+Evidence requirement,Every exported excerpt names its source,Generated file review
+Missing topic behavior,No file is generated,Unsupported subject request
+Preview step,Review evidence before download,Export workflow
+Demo run ID,sample,Local recording

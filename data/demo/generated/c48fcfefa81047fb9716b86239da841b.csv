@@ -1,0 +1,16 @@
+﻿Source,Excerpt
+quality_criteria.pdf,Pilot Quality Criteria
+pilot_metrics.csv,"Metric,Value,Context"
+review_guide.docx,Pilot Review Guide
+project_brief.txt,PFA 2026 Document Intelligence Pilot
+quality_criteria.pdf,The pilot success criterion is zero unsupported claims in generated files.
+pilot_metrics.csv,"Pilot location,""Casablanca, Morocco"",Document intelligence pilot"
+review_guide.docx,The quality reviewer is Salma Idrissi.
+project_brief.txt,"The pilot team is based in Casablanca, Morocco."
+quality_criteria.pdf,Every exported excerpt must be traceable to an indexed upload.
+pilot_metrics.csv,"Review owner,""Amal Benali"",Pilot operations"
+review_guide.docx,The reviewer checks source excerpts in the preview before downloading an export.
+project_brief.txt,"The assistant supports documents in English, French, and Arabic."
+quality_criteria.pdf,Machine learning (ML) helps classify the pilot's uploaded documents.
+pilot_metrics.csv,"Supported languages,""English; French; Arabic"",Indexed content"
+project_brief.txt,The project turns uploaded documents into searchable knowledge.

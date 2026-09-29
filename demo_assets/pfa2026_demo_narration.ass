@@ -1,0 +1,22 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Label,Segoe UI,34,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,0,0,2,80,80,34,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.90,0:00:05.07,Label,,0,0,0,,01  THE WORKSPACE   •   From documents to grounded answers
+Dialogue: 0,0:00:07.20,0:00:14.10,Label,,0,0,0,,02  GET STARTED   •   Create an account in the local demo
+Dialogue: 0,0:00:15.50,0:00:23.10,Label,,0,0,0,,03  DOCUMENT PIPELINE   •   Upload  →  Process  →  Index
+Dialogue: 0,0:00:23.15,0:00:31.10,Label,,0,0,0,,04  GROUNDED ANSWERS   •   The answer cites the indexed brief
+Dialogue: 0,0:00:31.15,0:00:36.13,Label,,0,0,0,,05  FILE EXPORT   •   Create and download a text summary
+Dialogue: 0,0:00:36.50,0:00:43.95,Label,,0,0,0,,06  FIND AND REVISIT   •   Filter by metadata and reopen saved chats
+Dialogue: 0,0:00:46.50,0:00:52.42,Label,,0,0,0,,07  DOCUMENT LIBRARY   •   Review status and metadata
+Dialogue: 0,0:00:54.40,0:01:00.80,Label,,0,0,0,,08  SETTINGS   •   Account, API routes, and sign in
+Dialogue: 0,0:01:02.40,0:01:13.43,Label,,0,0,0,,09  PRODUCTION ARCHITECTURE   •   Dedicated services in production • one API in this demo

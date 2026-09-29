@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAG Orchestration</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">RAG System Orchestration</p>
+        <h1>Turn every document into clean, usable knowledge.</h1>
+        <p class="lede">
+          Upload a file, extract its content, and keep the best result automatically.
+          The system reads text directly when it can, uses OCR for scanned content, and falls back to a stronger vision model only when the first extraction is not confident enough.
+        </p>
+      </div>
+      <button id="refreshStatus" class="ghost-button" type="button">Refresh Status</button>
+    </section>
+
+    <section class="status-grid" id="statusGrid"></section>
+
+    <section class="panel-grid">
+      <article class="panel">
+        <div class="panel-heading">
+          <h2>Database Setup</h2>
+          <p>Create the tables through the Postgres service endpoint.</p>
+        </div>
+        <button id="initDb" class="action-button" type="button">Initialize Tables</button>
+        <pre id="initDbResult" class="result-box muted">Waiting for action...</pre>
+      </article>
+
+      <article class="panel">
+        <div class="panel-heading">
+          <h2>Upload File</h2>
+          <p>Drag a file here or browse manually, then send it to the upload service.</p>
+        </div>
+        <form id="uploadForm" class="stacked-form">
+          <div id="dropZone" class="drop-zone">
+            <input id="uploadFile" name="file" type="file" required>
+            <span id="dropZoneLabel">Drop a file here or click to choose one.</span>
+          </div>
+          <button class="action-button" type="submit">Upload File</button>
+        </form>
+        <pre id="uploadResult" class="result-box muted">No upload yet.</pre>
+      </article>
+
+      <article class="panel panel-wide">
+        <div class="panel-heading">
+          <h2>Docling + VLM Decision</h2>
+          <p>Run Docling on the uploaded file. For image/PDF files, the orchestration checks confidence and only calls VLM if needed.</p>
+        </div>
+        <form id="processForm" class="stacked-form">
+          <label for="filePath">File path</label>
+          <textarea id="filePath" rows="3" placeholder="The uploaded file path will appear here." required></textarea>
+          <label for="languageHint">OCR language</label>
+          <select id="languageHint">
+            <option value="auto" selected>Auto</option>
+            <option value="french">French + English</option>
+            <option value="arabic">Arabic + English</option>
+          </select>
+          <button class="action-button" type="submit">Parse with Docling / VLM</button>
+        </form>
+        <div class="meta-grid">
+          <div class="meta-card">
+            <span class="meta-label">Confidence source</span>
+            <strong id="confidenceSource">—</strong>
+          </div>
+          <div class="meta-card">
+            <span class="meta-label">Confidence value</span>
+            <strong id="confidenceValue">—</strong>
+          </div>
+          <div class="meta-card">
+            <span class="meta-label">VLM triggered</span>
+            <strong id="vlmTriggered">No</strong>
+          </div>
+        </div>
+        <pre id="processResult" class="result-box muted">No orchestration run yet.</pre>
+      </article>
+
+      <article class="panel">
+        <div class="panel-heading">
+          <h2>Uploaded File Info</h2>
+          <p>The file metadata returned by the upload service and stored in Postgres.</p>
+        </div>
+        <pre id="documentResult" class="result-box muted">Nothing uploaded yet.</pre>
+      </article>
+
+      <article class="panel">
+        <div class="panel-heading">
+          <h2>Docling Result</h2>
+          <p>The direct response returned by the Docling service before any VLM fallback.</p>
+        </div>
+        <pre id="doclingInfo" class="result-box result-box-compact muted">No Docling run yet.</pre>
+        <pre id="doclingMarkdown" class="result-box muted">No Docling markdown yet.</pre>
+      </article>
+
+      <article class="panel panel-wide">
+        <div class="panel-heading">
+          <h2>Latest Processing Row</h2>
+          <p>The newest database view after Docling, and after VLM too if fallback was triggered.</p>
+        </div>
+        <pre id="latestProcessingResult" class="result-box muted">No processing row loaded yet.</pre>
+      </article>
+
+      <article class="panel panel-wide">
+        <div class="panel-heading">
+          <h2>Final Markdown</h2>
+          <p>The markdown that was finally kept after the orchestration decision.</p>
+        </div>
+        <pre id="finalMarkdown" class="result-box muted">No final markdown yet.</pre>
+        <p id="finalMessage" class="final-message muted">No final message yet.</p>
+      </article>
+
+      <article class="panel">
+        <div class="panel-heading">
+          <h2>LightRAG Indexing</h2>
+          <p>Index the uploaded document in LightRAG using the current file path.</p>
+        </div>
+        <form id="lightragIndexForm" class="stacked-form">
+          <label for="lightragIndexFilePath">File path</label>
+          <textarea id="lightragIndexFilePath" rows="3" placeholder="Use uploaded file path or paste one." required></textarea>
+          <button class="action-button" type="submit">Run LightRAG Indexing</button>
+        </form>
+        <pre id="lightragIndexResult" class="result-box muted">No LightRAG indexing yet.</pre>
+      </article>
+
+      <article class="panel panel-wide">
+        <div class="panel-heading">
+          <h2>LightRAG Retrieval</h2>
+          <p>Run retrieval and optional generated answer through orchestration.</p>
+        </div>
+        <form id="lightragRetrieveForm" class="stacked-form">
+          <label for="lightragQuery">Query</label>
+          <textarea id="lightragQuery" rows="3" placeholder="Ask your question..." required></textarea>
+
+          <div class="meta-grid">
+            <div class="meta-card">
+              <label for="lightragTopK">Top K</label>
+              <input id="lightragTopK" type="number" min="1" max="50" value="5">
+            </div>
+            <div class="meta-card">
+              <label for="lightragSearchType">Search type</label>
+              <select id="lightragSearchType">
+                <option value="hybrid" selected>hybrid</option>
+                <option value="naive">naive</option>
+                <option value="local">local</option>
+                <option value="global">global</option>
+                <option value="mix">mix</option>
+              </select>
+            </div>
+            <div class="meta-card">
+              <label for="lightragGenerateAnswer">Generate answer</label>
+              <select id="lightragGenerateAnswer">
+                <option value="true" selected>true</option>
+                <option value="false">false</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="action-button" type="submit">Run LightRAG Retrieval</button>
+        </form>
+        <pre id="lightragRetrieveResult" class="result-box muted">No LightRAG retrieval yet.</pre>
+      </article>
+    </section>
+  </main>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

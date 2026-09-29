@@ -1,0 +1,35 @@
+1
+00:00:00,900 --> 00:00:05,066
+Welcome to the P F A document intelligence workspace.
+
+2
+00:00:07,200 --> 00:00:14,102
+The local demo needs no cloud credentials. Create an account to open the chatbot workspace.
+
+3
+00:00:15,500 --> 00:00:23,100
+Choose a provider, add metadata, and start the queue. The file is uploaded, processed, and indexed.
+
+4
+00:00:23,150 --> 00:00:31,100
+Ask about the brief. The answer cites its source and identifies Casablanca, English, French, and Arabic.
+
+5
+00:00:31,150 --> 00:00:36,132
+You can also generate a downloadable text summary from the indexed content.
+
+6
+00:00:36,500 --> 00:00:43,954
+Metadata filters narrow retrieval. Saved chat sessions let you return to earlier questions and answers.
+
+7
+00:00:46,500 --> 00:00:52,418
+The document library shows the indexed file, its processing status, and metadata.
+
+8
+00:00:54,400 --> 00:01:00,798
+Settings show the account and API routes. Signing in again restores the workspace.
+
+9
+00:01:02,400 --> 00:01:13,430
+In production, dedicated services handle storage, parsing, vision fallback, retrieval, and database records. This walkthrough uses one local API.

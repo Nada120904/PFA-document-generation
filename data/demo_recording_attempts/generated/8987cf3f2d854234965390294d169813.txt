@@ -1,0 +1,10 @@
+Indexed Document Notes
+
+project_brief.txt: The project turns uploaded documents into searchable knowledge.
+project_brief.txt: Once a document is indexed, users can ask questions grounded in its content, filter retrieval using document metadata, revisit saved chat sessions, and inspect the document library.
+project_brief.txt: The project turns uploaded documents into searchable knowledge.
+project_brief.txt: Once a document is indexed, users can ask questions grounded in its content, filter retrieval using document metadata, revisit saved chat sessions, and inspect the document library.
+project_brief.txt: The project turns uploaded documents into searchable knowledge.
+project_brief.txt: Once a document is indexed, users can ask questions grounded in its content, filter retrieval using document metadata, revisit saved chat sessions, and inspect the document library.
+project_brief.txt: PFA 2026 Document Intelligence Pilot
+project_brief.txt: The pilot team is based in Casablanca, Morocco.

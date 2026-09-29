@@ -1,0 +1,37 @@
+﻿ID,Section,Source file,File type,Evidence excerpt
+E001,Quality Criteria,quality_criteria.pdf,PDF,The pilot success criterion is zero unsupported claims in generated files.
+E002,Quality Criteria,quality_criteria.pdf,PDF,Every exported excerpt must be traceable to an indexed upload.
+E003,Quality Criteria,quality_criteria.pdf,PDF,Machine learning (ML) helps classify the pilot's uploaded documents.
+E004,Quality Criteria,quality_criteria.pdf,PDF,The ML workflow extracts text and checks source passages before export.
+E005,Quality Criteria,quality_criteria.pdf,PDF,ML classification organizes documents so reviewers can find relevant evidence.
+E006,Quality Criteria,quality_criteria.pdf,PDF,ML output is reviewed against the extracted text from the original files.
+E007,Quality Criteria,quality_criteria.pdf,PDF,ML-assisted retrieval uses indexed passages to answer document questions.
+E008,Quality Criteria,quality_criteria.pdf,PDF,ML does not authorize a claim when the indexed files contain no matching fact.
+E009,Quality Criteria,quality_criteria.pdf,PDF,"The ML review checks the source name, passage wording, and requested subject."
+E010,Project Brief,project_brief.txt,TXT,"The pilot team is based in Casablanca, Morocco."
+E011,Project Brief,project_brief.txt,TXT,"The assistant supports documents in English, French, and Arabic."
+E012,Project Brief,project_brief.txt,TXT,"The pilot accepts PDF, Word, CSV, and TXT uploads."
+E013,Project Brief,project_brief.txt,TXT,The project turns uploaded documents into searchable knowledge.
+E014,Project Brief,project_brief.txt,TXT,"Users choose a storage provider, add a document and metadata, and start the processing queue."
+E015,Project Brief,project_brief.txt,TXT,"The pipeline uploads each file, extracts its text, and indexes the result for retrieval."
+E016,Project Brief,project_brief.txt,TXT,A vision model can help with difficult scanned pages when ordinary extraction has low confidence.
+E017,Project Brief,project_brief.txt,TXT,"After indexing, users can ask questions grounded in the uploaded content."
+E018,Project Brief,project_brief.txt,TXT,Users can filter retrieval with document metadata to narrow the evidence set.
+E019,Review Guide,review_guide.docx,DOCX,The quality reviewer is Salma Idrissi.
+E020,Review Guide,review_guide.docx,DOCX,The review owner is Amal Benali.
+E021,Review Guide,review_guide.docx,DOCX,The reviewer checks source excerpts in the preview before downloading an export.
+E022,Review Guide,review_guide.docx,DOCX,The reviewer compares every generated claim with the named uploaded file.
+E023,Review Guide,review_guide.docx,DOCX,The reviewer confirms that a requested subject appears in the indexed files before approving an export.
+E024,Review Guide,review_guide.docx,DOCX,A request without matching source material must return a no-data message and no file.
+E025,Review Guide,review_guide.docx,DOCX,"The review covers PDF, Word, CSV, and TXT exports."
+E026,Review Guide,review_guide.docx,DOCX,"The review checklist includes factual accuracy, readable structure, source names, and complete download links."
+E027,Review Guide,review_guide.docx,DOCX,The owner records any unsupported or unclear statement for correction before sharing a file.
+E028,Pilot Metrics,pilot_metrics.csv,CSV,"Metric: Pilot location; Value: Casablanca, Morocco; Context: Document intelligence pilot"
+E029,Pilot Metrics,pilot_metrics.csv,CSV,Metric: Review owner; Value: Amal Benali; Context: Pilot operations
+E030,Pilot Metrics,pilot_metrics.csv,CSV,Metric: Quality reviewer; Value: Salma Idrissi; Context: Content review
+E031,Pilot Metrics,pilot_metrics.csv,CSV,Metric: Supported languages; Value: English; French; Arabic; Context: Indexed content
+E032,Pilot Metrics,pilot_metrics.csv,CSV,Metric: Accepted upload formats; Value: PDF; Word; CSV; TXT; Context: Document intake
+E033,Pilot Metrics,pilot_metrics.csv,CSV,Metric: Target turnaround; Value: 2 business days; Context: Pilot review workflow
+E034,Pilot Metrics,pilot_metrics.csv,CSV,Metric: Quality target; Value: Zero unsupported claims; Context: Generated file review
+E035,Pilot Metrics,pilot_metrics.csv,CSV,Metric: Evidence requirement; Value: Every exported excerpt names its source; Context: Generated file review
+E036,Pilot Metrics,pilot_metrics.csv,CSV,Metric: Missing topic behavior; Value: No file is generated; Context: Unsupported subject request

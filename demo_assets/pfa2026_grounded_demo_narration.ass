@@ -1,0 +1,23 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Label,Segoe UI,34,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,0,0,2,80,80,34,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.35,0:00:05.32,Label,,0,0,0,,01  WORKSPACE   •   Four uploads and four redesigned exports
+Dialogue: 0,0:00:06.37,0:00:11.30,Label,,0,0,0,,02  UPLOAD   •   PDF + Word + CSV + TXT
+Dialogue: 0,0:00:16.89,0:00:21.44,Label,,0,0,0,,03  CHAT ANSWER   •   Three facts in one answer
+Dialogue: 0,0:00:21.68,0:00:25.51,Label,,0,0,0,,04  NO DATA   •   Lunar geology request declined
+Dialogue: 0,0:00:26.29,0:00:29.59,Label,,0,0,0,,05  ML PDF REQUEST   •   Generate and preview the PDF
+Dialogue: 0,0:00:29.64,0:00:35.32,Label,,0,0,0,,06  OPEN PDF   •   ML brief with clear sections
+Dialogue: 0,0:00:38.73,0:00:43.43,Label,,0,0,0,,07  OPEN WORD   •   36 items grouped by document
+Dialogue: 0,0:00:48.03,0:00:53.23,Label,,0,0,0,,08  OPEN TXT   •   Readable plain text sections
+Dialogue: 0,0:00:57.14,0:01:02.82,Label,,0,0,0,,09  OPEN CSV   •   Structured evidence table
+Dialogue: 0,0:01:03.89,0:01:07.65,Label,,0,0,0,,10  FOUR FILES   •   PDF · Word · TXT · CSV
